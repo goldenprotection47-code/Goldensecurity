@@ -5,130 +5,80 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Golden Protection Security</title>
   <style>
+    /* Reset */
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
     body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #0f0f0f;
-      color: #fff;
-    }
-    header {
-      background-color: #1a1a1a;
-      padding: 20px;
-      text-align: center;
-      border-bottom: 3px solid #FFD700;
-    }
-    header h1 {
-      margin: 0;
-      font-size: 2.5em;
+      font-family: 'Arial Black', Arial, sans-serif;
+      background-color: #0a0a0a;
       color: #FFD700;
-    }
-    nav {
       display: flex;
+      flex-direction: column;
+      align-items: center;
       justify-content: center;
-      gap: 20px;
-      background-color: #111;
-      padding: 10px 0;
-    }
-    nav a {
-      color: #fff;
-      text-decoration: none;
-      font-weight: bold;
-      transition: color 0.3s;
-    }
-    nav a:hover {
-      color: #FFD700;
-    }
-    .hero {
-      position: relative;
+      min-height: 100vh;
       text-align: center;
-      color: white;
+      overflow-x: hidden;
     }
-    .hero img {
-      width: 100%;
-      height: 500px;
-      object-fit: cover;
-      opacity: 0.9;
+
+    h1 {
+      font-size: 4em;
+      margin-bottom: 20px;
+      animation: pulse 2s infinite;
+      letter-spacing: 5px;
     }
-    .hero-text {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
+
+    h2 {
       font-size: 2em;
-      background: rgba(0,0,0,0.5);
-      padding: 20px;
-      border-radius: 10px;
+      margin-bottom: 40px;
+      color: #fff;
     }
-    .services {
-      display: flex;
-      justify-content: space-around;
-      flex-wrap: wrap;
-      padding: 50px 20px;
-      gap: 20px;
+
+    p {
+      font-size: 1.2em;
+      max-width: 700px;
+      line-height: 1.5;
+      margin-bottom: 30px;
+      color: #ccc;
     }
-    .service {
-      background-color: #1a1a1a;
-      padding: 20px;
-      border-radius: 10px;
-      width: 300px;
-      text-align: center;
-      transition: transform 0.3s;
-    }
-    .service:hover {
-      transform: scale(1.05);
+
+    .contact {
+      font-size: 1.5em;
+      color: #FFD700;
       border: 2px solid #FFD700;
-    }
-    .service img {
-      width: 100%;
+      padding: 20px 40px;
       border-radius: 10px;
+      transition: all 0.3s ease-in-out;
     }
-    footer {
-      background-color: #111;
-      text-align: center;
-      padding: 20px;
-      border-top: 3px solid #FFD700;
+
+    .contact:hover {
+      background-color: #FFD700;
+      color: #0a0a0a;
+      transform: scale(1.1);
+    }
+
+    @keyframes pulse {
+      0% { text-shadow: 0 0 10px #FFD700, 0 0 20px #FFD700; }
+      50% { text-shadow: 0 0 20px #FFD700, 0 0 40px #FFD700; }
+      100% { text-shadow: 0 0 10px #FFD700, 0 0 20px #FFD700; }
+    }
+
+    @media (max-width: 768px) {
+      h1 { font-size: 3em; }
+      h2 { font-size: 1.5em; }
+      .contact { font-size: 1.2em; padding: 15px 30px; }
     }
   </style>
 </head>
 <body>
 
-  <header>
-    <h1>Golden Protection Security</h1>
-  </header>
-
-  <nav>
-    <a href="#services">Our Services</a>
-    <a href="#contact">Contact Us</a>
-  </nav>
-
-  <section class="hero">
-    <img src="https://images.unsplash.com/photo-1590099964405-15a07e5bda0d?auto=format&fit=crop&w=1950&q=80" alt="Security">
-    <div class="hero-text">Protecting your home and business with a professional team</div>
-  </section>
-
-  <section id="services" class="services">
-    <div class="service">
-      <img src="https://images.unsplash.com/photo-1608239231907-6e45f7e2f0e1?auto=format&fit=crop&w=800&q=80" alt="CCTV">
-      <h3>CCTV Monitoring</h3>
-      <p>We install and monitor sensitive areas to ensure full security.</p>
-    </div>
-    <div class="service">
-      <img src="https://images.unsplash.com/photo-1611988611824-bb3e02ef7a0a?auto=format&fit=crop&w=800&q=80" alt="Security Staff">
-      <h3>Static & Mobile Guards</h3>
-      <p>Trained team to secure buildings and vital areas.</p>
-    </div>
-    <div class="service">
-      <img src="https://images.unsplash.com/photo-1626103688121-f45a1f3518b4?auto=format&fit=crop&w=800&q=80" alt="Construction Security">
-      <h3>Construction Site Security</h3>
-      <p>Specialized service for projects and sites under construction.</p>
-    </div>
-  </section>
-
-  <footer id="contact">
-    <p>📞 Mobile: 07472628513 | ✉ Email: Gpsl.uk@outlook.com</p>
-    <p>&copy; 2026 Golden Protection Security. All rights reserved.</p>
-  </footer>
+  <h1>GOLDEN PROTECTION SECURITY</h1>
+  <h2>YOUR SAFETY. OUR MISSION.</h2>
+  <p>We provide top-tier security solutions across London. From CCTV monitoring, mobile and static guards, to construction site protection – we ensure your business and home remain safe 24/7.</p>
+  
+  <div class="contact">
+    📞 07472628513 | ✉ Gpsl.uk@outlook.com
+  </div>
 
 </body>
 </html>
