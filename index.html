@@ -10,34 +10,34 @@
 
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #1c1c1c;
-      color: #f0f0f0;
+      background-color: #1d2b36; /* لون رسمي قريب من مواقع الشرطة */
+      color: #f8f9fa;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
       min-height: 100vh;
       text-align: center;
-      padding: 20px;
+      padding: 30px 20px;
     }
 
-    h1 {
+    header h1 {
       font-size: 3.5em;
-      color: #FFD700;
+      color: #FFD700; /* لمسة ذهبية رسمية */
       margin-bottom: 10px;
-      letter-spacing: 4px;
+      letter-spacing: 3px;
     }
 
-    h2 {
+    header h2 {
       font-size: 1.8em;
-      margin-bottom: 30px;
       color: #ffffff;
       font-weight: 400;
+      margin-bottom: 30px;
     }
 
-    p {
+    section p {
       font-size: 1.2em;
-      max-width: 700px;
+      max-width: 750px;
       line-height: 1.8;
       margin-bottom: 40px;
       color: #d0d0d0;
@@ -52,34 +52,50 @@
       transition: all 0.3s ease-in-out;
       text-decoration: none;
       display: inline-block;
+      margin: 10px;
     }
 
     .contact:hover {
       background-color: #FFD700;
-      color: #1c1c1c;
+      color: #1d2b36;
       transform: scale(1.05);
     }
 
+    footer {
+      margin-top: 40px;
+      font-size: 0.95em;
+      color: #a0a0a0;
+    }
+
     @media (max-width: 768px) {
-      h1 { font-size: 2.5em; }
-      h2 { font-size: 1.4em; }
-      p { font-size: 1em; }
+      header h1 { font-size: 2.5em; }
+      header h2 { font-size: 1.4em; }
+      section p { font-size: 1em; }
       .contact { font-size: 1.1em; padding: 12px 25px; }
     }
   </style>
 </head>
 <body>
 
-  <h1>Golden Protection Security</h1>
-  <h2>Professional Security Solutions Across London</h2>
-  <p>
-    We provide comprehensive and reliable security services for homes, businesses, and construction sites. 
-    Our team of trained professionals ensures 24/7 protection, CCTV monitoring, and mobile or static guards, 
-    guaranteeing your peace of mind.
-  </p>
-  
-  <a class="contact" href="tel:07472628513">📞 07472628513</a> &nbsp; | &nbsp; 
-  <a class="contact" href="mailto:Gpsl.uk@outlook.com">✉ Gpsl.uk@outlook.com</a>
+  <header>
+    <h1>Golden Protection Security</h1>
+    <h2>Professional Security Solutions in Manchester & Northwest</h2>
+  </header>
+
+  <section>
+    <p>
+      We provide top-tier security services for homes, businesses, and construction sites across Manchester and the Northwest. 
+      Our team delivers CCTV monitoring, mobile and static guards, and specialized protection for site construction, 
+      ensuring your property and projects remain fully secure 24/7.
+    </p>
+
+    <a class="contact" href="tel:07472628513">📞 07472628513</a>
+    <a class="contact" href="mailto:Gpsl.uk@outlook.com">✉ Gpsl.uk@outlook.com</a>
+  </section>
+
+  <footer>
+    &copy; 2026 Golden Protection Security. All rights reserved.
+  </footer>
 
 </body>
 </html>
